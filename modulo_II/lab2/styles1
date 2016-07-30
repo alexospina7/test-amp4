@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px){
+ #imagen{
+ 	display: none;
+ }
+ #primera{
+	color:#808080;
+ }
+ #segunda{
+ 	color: #0000ff;
+ }
+ #tercera{
+ 	color: #ff00ff;
+ }
+ #cuarta{
+ 	display: none;
+ }
+ #quinta{
+ 	display: none;
+ }
+ #sexta{
+ 	display: none;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+ #imagen{
+ 	display: none;
+ }
+ #primera{
+	display: none;
+ }
+ #segunda{
+ 	display: none;
+ }
+ #tercera{
+ 	display: none;
+
+ }	
+#cuarta{
+	color: #ff00ff;
+	
+}
+#quinta{
+	color: #0000ff;
+}
+#sexta{
+	color:#808080
+}
+}
+
+@media screen and (min-width: 1200px){
+#imagen{
+ 	display: block;
+ }
+ #primera{
+  	display:none;
+ }
+ #segunda{
+ 	color: #008000;
+ }
+ #tercera{
+ 	color: #0000ff;
+ }
+ #cuarta{
+ 	display: none;
+ }
+ #quinta{
+ 	display: none;
+ }
+ #sexta{
+ 	display: none;
+ }
+}

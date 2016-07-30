@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="appController"  >
+		<div ng-show="revealDiv">
+			<h1>Hola mundo</h1>
+		</div>
+		<p>Primer numero: <input  type="number" ng-model="a" /></p>
+		<p>Segundo numero: <input  type="number" ng-model="b" /></p>
+		
+	 <h1> {{ a+b }} </h1>
+	 
+	 <p>Resultado: <input  type="number" ng-model="c"   /></p>
+	 <button ng-click="controlButton()"  >Sumar</button>
+	 <button ng-click="controlButton1()"  >Restar</button>
+	 <button ng-click="controlButton2()"  >Multiplicar</button>
+	 <button ng-click="controlButton3()"  >Dividir</button>
+	 </div>
+	<script type="text/javascript" src="angular.min.js"></script>
+
+	<script type="text/javascript">
+	angular.module('app', [])
+		   .controller('appController', function($scope){
+		   		
+		   		$scope.a=0;
+		   		$scope.b=0;
+
+		   		$scope.controlButton = function(){
+		   		$scope.c=$scope.a+$scope.b;
+		   	};
+
+		   	$scope.controlButton1 = function(){
+		    $scope.c=$scope.a-$scope.b;
+		   	}
+
+		   	$scope.controlButton2 = function(){
+		   	$scope.c=$scope.a*$scope.b;
+		   	}
+		   	$scope.controlButton3 = function(){
+		   		$scope.c=$scope.a / $scope.b;
+		   	}
+		   });
+	</script>
+
+
+</body>
+</html>

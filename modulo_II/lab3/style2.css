@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px){
+ #imagen1{
+ 	display: none;
+ }
+  #imagen2{
+ 	display: none;
+ } #imagen3{
+ 	display: none;
+ }
+
+  #imagen4{
+ 	display: block;
+ }
+  #imagen5{
+ 	display: block;
+ } #imagen6{
+ 	display: block;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+ #imagen1{
+ 	display: none;
+ }
+  #imagen2{
+ 	display: none;
+ } #imagen3{
+ 	display: none;
+ }
+
+  #imagen4{
+ 	display: block;
+ }
+  #imagen5{
+ 	display: block;
+ } #imagen6{
+ 	display: block;
+ }
+
+ 
+}
+
+@media screen and (min-width: 1200px){
+ #imagen1{
+ 	display: block;
+ }
+  #imagen2{
+ 	display: block;
+ } #imagen3{
+ 	display: block;
+ }
+
+  #imagen4{
+ 	display:none;
+ }
+  #imagen5{
+ 	display: none;
+ } #imagen6{
+ 	display: none;
+ }
+}

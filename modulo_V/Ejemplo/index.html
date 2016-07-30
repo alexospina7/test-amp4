@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="Entrenador">
+<head>
+	<title>Ejemplo</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+<div ng-controller="controller-one">
+			<div class="container">
+			<div class="container2">
+			<a ng-style="stypes" id="inicial" >La pagina principal</a>
+			</div>
+			<div class="container3">
+			<p ng-class="special_class" > Parrafo1, Working as a software engineering</p>
+			</div>
+			<button ng-click="cambiar1()">Cambiar1</button>
+			<button ng-dblclick="cambiar2()">Cambiar2</button>
+			<button ng-click="eliminar()">Eliminar</button>
+			</div>
+</div>
+<script type="text/javascript">
+
+ angular.module('Entrenador', [])
+               .controller('controller-one', ['$scope', function($scope){
+
+				$scope.cambiar1 = function(){
+                    $scope.stypes = {
+                        "background": "blue",
+                        "color": "yellow"
+                    };
+                };
+            
+                $scope.cambiar2 = function(){
+                    $scope.special_class = "angularjs";
+                 };
+
+                  $scope.eliminar = function(){
+                    $scope.special_class = "";
+                    $scope.stypes="";
+                 };
+
+
+                 }]);
+
+               	</script>
+
+</body>
+</html>
